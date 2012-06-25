@@ -43,6 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %{_datadir}/www/doc/stdprompts_@LANG_ID@/*
 %{_datadir}/java/sipXecs/sipXconfig/plugins/*
+%{_datadir}/java/sipXecs/sipXivr/*
 
 %post
 

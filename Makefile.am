@@ -1,4 +1,5 @@
 include config/lang.am
+include config/java.am
 
 EXTRA_DIST = \
 	sipxpbx \
@@ -8,6 +9,7 @@ EXTRA_DIST = \
 
 prompts_SOURCE = $(shell find $(srcdir)/stdprompts -name '*.wav' -type f -printf '%P\n')
 confplugin_DATA = sipxlang-@LANG_ID@.jar
+ivrplugin_DATA = sipxlangivr-@LANG_ID@.jar
 
 install-data-hook :
 	echo "$$Installer" | \
