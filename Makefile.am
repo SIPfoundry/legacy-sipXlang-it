@@ -3,6 +3,7 @@ include config/java.am
 
 EXTRA_DIST = \
 	sipxpbx \
+	sipxivr \
 	stdprompts \
 	config/revision-gen \
 	sipxlang-@LANG_ID@.spec
