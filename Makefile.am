@@ -1,5 +1,4 @@
 include config/lang.am
-include config/java.am
 
 EXTRA_DIST = \
 	sipxpbx \
