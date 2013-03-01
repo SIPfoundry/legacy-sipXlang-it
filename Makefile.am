@@ -1,11 +1,11 @@
+include config/utility.am
+include config/project.am
 include config/lang.am
 
-EXTRA_DIST = \
+@PACKAGE@_EXTRA_DIST = \
 	sipxpbx \
-	sipxivr \
 	stdprompts \
-	config/revision-gen \
-	sipxlang-@LANG_ID@.spec
+	sipxivr
 
 prompts_SOURCE = $(shell find $(srcdir)/stdprompts -name '*.wav' -type f -printf '%P\n')
 confplugin_DATA = sipxlang-@LANG_ID@.jar
